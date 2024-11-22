@@ -3,7 +3,7 @@ const admin = [
     id: 1,
     email: "admin@example.com",
     password: "123",
-     // Added Indian name
+    firstname:"Arun" // Added Indian name
   }
 ];
 
