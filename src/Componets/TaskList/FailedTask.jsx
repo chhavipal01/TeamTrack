@@ -2,19 +2,19 @@ import React from 'react'
 
 const FailedTask = () => {
   return (
-    <div className='flex-shrink-0 h-full w-[300px] bg-yellow-400 rounded-xl'>
-    <div className='flex justify-between p-5'>
-      <h3 className='bg-red-600 text-sm px-3 py-1 rounded-md '> High</h3>
-      <h4 className='text-sm'> 20 feb 2024</h4>
-    </div>
-    <h2 className='mt-5 text-2xl font-semibold p-3'> Make a youtube video</h2>
-    <p className='text-sm p-3'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum provident quod consectetur, et obcaecati nesciunt pariatur cupiditate quas alias nemo enim libero ipsum minus minima vero.
-    </p>
-    <div className='mt-2'>
-        <button className='w-full'> Failed Task</button>
-    </div>
-  </div> 
-
+    <div className='flex-shrink-0 h-full w-[300px] p-5 bg-yellow-400 rounded-xl'>
+            <div className='flex justify-between items-center'>
+                <h3 className='bg-red-600 text-sm px-3 py-1 rounded'>{data.category}</h3>
+                <h4 className='text-sm'>{data.taskDate}</h4>
+            </div>
+            <h2 className='mt-5 text-2xl font-semibold'>{data.taskTitle}</h2>
+            <p className='text-sm mt-2'>
+                {data.taskDescription}
+            </p>
+            <div className='mt-6'>
+                <button className='w-full bg-red-500 rounded font-medium py-1 px-2 text-xs'>Failed</button>
+            </div>
+        </div>
   )
 }
 
